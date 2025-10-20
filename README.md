@@ -17,4 +17,13 @@ Kullanıcıların e-posta, şifre veya Google ile giriş yapabildiği, rehber er
 # Ekran Görüntüleri
   * Login ve SignUp Ekranları:
     <img width="1080" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0706c554-3e3f-4a63-8660-b081eb23cdac" />
+ * Google Heesap ile giriş ekranları:
+    <img width="1080" height="1080" alt="Image" src="https://github.com/user-attachments/assets/67d5623b-55f9-4e05-8eb5-4d2dec025dd8" />
+ * Sohbetler ve Kişiler Ekranları:
+    <img width="1080" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6f88f69c-0cfb-4f0e-a59e-cb074e43a880" />
+ *  Chat ve Ayarlar Ekranları:
+    <img width="1080" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b9c59672-11a2-488f-93c5-c270eab4ecb3" />
+ *  Gerçek zamanlı Typing durumu:
+    
+    
     
