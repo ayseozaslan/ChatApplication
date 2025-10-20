@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/talksFragment"
+        android:icon="@drawable/sohbetler"
+        android:title="Sohbetler" />
+    <item
+        android:id="@+id/personsFragment"
+        android:icon="@drawable/persons"
+        android:title="Kişiler" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings"
+        android:title="Ayarlar" />
+</menu>

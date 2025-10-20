@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/imageUser"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="84dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/white_card_setting"
+            android:layout_width="289dp"
+            android:layout_height="208dp"
+            android:layout_marginTop="124dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageUser"
+            app:srcCompat="@drawable/white_card" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Hesap Bilgileri"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/white_card_setting"
+            app:layout_constraintTop_toTopOf="@+id/white_card_setting" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="212dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/email"
+            android:enabled="false"
+            android:hint="E posta"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#0B0A0A"
+            android:textColorHint="#CCCCCC"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="212dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="24dp"
+            android:enabled="false"
+            android:drawableStart="@drawable/user"
+            android:background="@drawable/edittext_background"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#0B0A0A"
+            android:textColorHint="#CCCCCC"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <Button
+            android:id="@+id/buttonSettingSave"
+            android:layout_width="301dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#58CD36"
+            android:text="Değişiklikleri Kaydet"
+            android:textAllCaps="false"
+            android:textColor="@color/material_dynamic_neutral30"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/white_card_setting" />
+
+        <TextView
+            android:id="@+id/textuploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Düzenle"
+            android:textColor="#99EBA0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/white_card_setting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageUser"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSignout"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="308dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/button_back_sign"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/logout"
+            app:iconTint="#FF0000"
+            android:text="Çıkış Yap"
+            android:textAllCaps="false"
+            android:textColor="#757373"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.652"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSettingSave" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

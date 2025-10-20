@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.SignUpFragment">
+
+        <!-- 1️⃣ Arka plan en üstte olmalı -->
+        <ImageView
+            android:id="@+id/fullscreenBackground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="Background"
+            android:scaleType="centerCrop"
+            android:src="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 2️⃣ Kart arka plan olarak, clickable=false -->
+        <ImageView
+            android:id="@+id/white_card_sign"
+            android:layout_width="350dp"
+            android:layout_height="390dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="72dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_update_sign"
+            app:srcCompat="@drawable/white_card" />
+
+        <!-- 3️⃣ Üstteki yazılar, alanlar ve butonlar -->
+
+        <TextView
+            android:id="@+id/text_sign_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="ChatAys"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_update_sign"
+            android:layout_width="102dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_sign"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_sign_title" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kayıt Ol"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/white_card_sign" />
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_width="284dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Kullanıcı Adınızı Girin"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#050505"
+            android:textColorHint="#090909"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/white_card_sign"
+            app:layout_constraintStart_toStartOf="@id/white_card_sign"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="284dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:hint="E-posta adresinizi girin"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#090909"
+            android:textColorHint="#050505"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/usernameField"
+            app:layout_constraintStart_toStartOf="@id/usernameField"
+            app:layout_constraintTop_toBottomOf="@id/usernameField" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:endIconMode="password_toggle"
+            app:layout_constraintTop_toBottomOf="@id/emailField"
+            app:layout_constraintStart_toStartOf="@id/emailField"
+            app:layout_constraintEnd_toEndOf="@id/emailField"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPassword"
+                android:hint="Şifrenizi Girin"
+                android:padding="12dp"
+                android:textColor="#090909"
+                android:textColorHint="#090909"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="301dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#58CD36"
+            android:text="Kayıt Ol"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/white_card_sign"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordField"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

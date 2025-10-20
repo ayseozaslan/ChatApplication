@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "603826188305",
+    "firebase_url": "https://chatays-5a1fe-default-rtdb.firebaseio.com",
+    "project_id": "chatays-5a1fe",
+    "storage_bucket": "chatays-5a1fe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603826188305:android:fbfeda25c2d6ca4c2e41b0",
+        "android_client_info": {
+          "package_name": "com.example.chatays"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603826188305-70ltgs6oq26p4ulm49hk3duknrvd6qha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatays",
+            "certificate_hash": "98d1830d89758a782faa8d5fca80cafc4bdef3be"
+          }
+        },
+        {
+          "client_id": "603826188305-5iijocsjvjikd5hs9393gh6qrj8nsosk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAM5UrhXQzRwFphej8T51t1Jq4IsbiX2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603826188305-5iijocsjvjikd5hs9393gh6qrj8nsosk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
