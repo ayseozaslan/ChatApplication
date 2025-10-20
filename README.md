@@ -23,7 +23,8 @@ Kullanıcıların e-posta, şifre veya Google ile giriş yapabildiği, rehber er
     <img width="1080" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6f88f69c-0cfb-4f0e-a59e-cb074e43a880" />
  *  Chat ve Ayarlar Ekranları:
     <img width="1080" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b9c59672-11a2-488f-93c5-c270eab4ecb3" />
- *  Gerçek zamanlı Typing durumu:
-    
+ *  Gerçek zamanlı Typing durumu Ve Chatta chatta gönderilen fotografın tam ekran gösterimi:
+ *  
+    https://github.com/user-attachments/assets/25298c7e-74b7-47f9-8482-1bf1db6c7e45
     
     
